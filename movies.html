@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href="movies.css" rel="stylesheet" type="text/css">
+	<title>Infinite Movie Scroll</title>
+</head>
+<body>
+	<div id="main">
+		<h1 id="top"><a name="top"></a>Infinite Movie Scroll</h1>
+		
+		<div >
+			<form action="http://www.omdbapi.com/" method="get" id="searchForm">
+				<label for="titleField">
+					Search by title
+					<div class="rounded inputfield" id="searchArea">
+						<img id="mag-glass" src="https://raw.githubusercontent.com/anisledge/responsive-portfolio-template/master/images/teal-magnifying-glass.png">
+						<input type="text" name="s" id="titleField">
+					</div>
+					<p id="titleError" class="error">Please enter a search that is longer than one character.</p>
+				</label></br>
+				<input type="text" name="r" value="json" style="display:none">
+				<button type="submit" id="searchButton" class="rounded">Search</button>
+			</form>
+			<noscript>Your browser does not support JavaScript!<br/>
+					  Searching for a movie will take you to a separate page with unformatted results.
+			</noscript>
+		</div>
+	
+		<div id="results"></div>
+		
+		<div id="loadingIcon">
+			<img class="loading-icon" src="https://raw.githubusercontent.com/anisledge/responsive-portfolio-template/master/images/dots-teal-fast.gif" alt="Loading...">
+		</div>
+	</div>
+	
+	<div>
+		<a href="#top" role="button"><img id="totop" class="rounded" src="https://raw.githubusercontent.com/anisledge/responsive-portfolio-template/master/images/blue-arrow.png" alt="Back to Top"></a>
+	</div>
+	
+	<script src="movies.js"></script>
+</body>
+</html>

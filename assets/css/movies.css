@@ -1,0 +1,153 @@
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 100%;
+	background-color: #fff;
+	font-family: 'Lato', Arial, sans-serif;
+}
+
+#main { 
+	margin: 0 auto; 
+	padding-top: 20px;
+}
+
+h1 { font-size: 2.4em; }
+
+h2 { font-size: 1.4em; }
+
+h3 { font-size: 1.2em; }
+
+li { font-size: 1em; }
+
+a {
+	color: #00b8e6;
+}
+a:visited {
+	color: #8888dd;
+}
+
+form { 
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-size: 1.5em; 
+}
+
+ul {
+	text-align: left;
+	width: 60%;
+	margin-left: 20%;
+	padding: 0;
+}
+
+li { list-style: none; }
+
+#loadingIcon { display: none; }
+.loading-icon { width: 80px; }
+
+#totop {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	width: 36px;
+	padding: 10px;
+	z-index: 100;
+	background-color: rgba(255,255,255,0.8);
+	border: 1px solid #fff;
+}
+#totop:hover {
+	background-color: #e6f7ff;
+}
+
+.inputfield {
+	margin: 10px;
+	padding: 5px;
+	width: 70%;
+	margin-left: 15%;
+	border: 2px solid #ccc;
+}
+
+.inputfield:focus {
+	background-color: #e6f7ff;
+}
+
+#mag-glass {
+	width: 28px;
+	margin-bottom: -5px;
+}
+
+input[name='s'] {
+	width: 90%;
+	font-size: 1.1em;
+	border: none;
+	outline: none;
+}
+.outline {
+	border-color: #00b8e6;
+}
+
+button {
+	margin: 5px;
+	padding: 8px;
+	font-size: 1em;
+	font-family: 'Lato', Arial, sans-serif;
+	border: 1px solid #00a3cc;
+	background: #33d6ff;
+  	background: -webkit-linear-gradient(left top, #33d6ff, #00a3cc); 
+  	background: -o-linear-gradient(bottom right, #33d6ff, #00a3cc); 
+  	background: -moz-linear-gradient(bottom right, #33d6ff, #00a3cc);
+  	background: linear-gradient(to bottom right, #33d6ff, #00a3cc);
+}
+button:hover {
+	background: #008fb3;
+  	background: -webkit-linear-gradient(left top, #008fb3, #00a3cc); 
+  	background: -o-linear-gradient(bottom right, #008fb3, #00a3cc); 
+  	background: -moz-linear-gradient(bottom right, #008fb3, #00a3cc);
+  	background: linear-gradient(to bottom right, #008fb3, #00a3cc);
+}
+
+.highlight { background-color: #fbf0ea; }
+.highlight:focus { background-color: #fbf0ea; }
+
+
+#titleError {
+	display: none;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 0;
+	font-size: 0.8em;
+}
+.error {
+	color: #ff5500;
+}
+
+.rounded {
+	border-radius: 6px;
+}
+
+@media only screen and (max-width: 550px) {
+	ul {
+		width: 80%;
+		margin-left: 10%;
+	}
+	input[name="s"] { width: 85%; }
+	#searchArea {
+		width: 80%;
+		margin-left: 10%;
+	}
+	h1 { font-size: 2em; }
+}
+@media only screen and (min-width: 795px) {
+	ul {
+		width: 50%;
+		margin-left: 25%;
+	}
+	#searchArea {
+		width: 50%;
+		margin-left: 25%;
+	}
+}
